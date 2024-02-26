@@ -10,8 +10,8 @@ import Add from '../components/Add';
 const HomeScreen = () => {
   const navigation = useNavigation();
 
-  const goToSettings = () => {
-    navigation.navigate("Settings");
+  const goToLogin = () => {
+    navigation.navigate("Iniciar sesión");
   };
 
   const [qrData, setQRData] = useState('');
@@ -42,8 +42,8 @@ const HomeScreen = () => {
 
           {/* <Restaurantes /> */}
 
-          <Pressable activeOpacity={0.7} onPress={goToSettings}>
-            <Button text={"Ir a Settings"} />
+          <Pressable activeOpacity={0.7} onPress={goToLogin}>
+            <Button text={"Ir a Login"} />
           </Pressable>
 
 
